@@ -1,0 +1,39 @@
+Package: tabulizerp
+Title: Bindings for 'Tabula' PDF Table Extractor Library
+Version: 0.2.2.1
+Authors@R: 
+   c(person("Thomas J.", "Leeper",
+                    role = "aut", 
+                    email = "thosjleeper@gmail.com",
+                    comment = c(ORCID = "0000-0003-4097-6326")),
+             person("Tom", "Paskhalis",
+                    role = "cre",
+                    email = "tpaskhalis@gmail.com",
+                    comment = c(ORCID = "0000-0001-9298-8850")),
+             person("David", "Gohel",
+                    role = "ctb",
+                    comment = "rOpenSci reviewer"),
+             person("Lincoln", "Mullen",
+                    role = "ctb",
+                    comment = "rOpenSci reviewer"))
+Description: Bindings for the 'Tabula' <http://tabula.technology/> 'Java'
+    library, which can extract tables from PDF documents. The 'tabulizerjars'
+    package <https://github.com/ropensci/tabulizerjars> provides versioned
+    'Java' .jar files, including all dependencies, aligned to releases of
+    'Tabula'.
+License: MIT + file LICENSE
+Suggests: 
+    miniUI,
+    shiny,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+URL: https://docs.ropensci.org/tabulizer (website)
+Imports: 
+    png,
+    rJava,
+    tabulizerjars,
+    tools,
+    utils
